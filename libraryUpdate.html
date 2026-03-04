@@ -56,7 +56,7 @@
     // Populate dropdown with real books from DB
     (async function loadBooks() {
       const select = document.getElementById("id");
-      const res = await fetch("http://localhost:8004/api/v1/library");
+      const res = await fetch("https://michael-sbackend.onrender.com/api/v1/library");
       const books = await res.json();
 
       select.innerHTML = "";
