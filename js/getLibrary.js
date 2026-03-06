@@ -15,6 +15,7 @@ new gridjs.Grid({
 
   server: {
     url: "https://michael-sbackend.onrender.com/api/v1/library",
+    //url: "http://localhost:8004/api/v1/library",
     then: (data) => {
       data.sort((a, b) => b.id - a.id);
       return data.map((book) => [
